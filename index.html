@@ -1,0 +1,253 @@
+<html>
+
+<head>
+    <title>
+        Anatoly Zavyalov
+    </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div id="header" class="transition">
+        <span class="header-element text header-title">
+            Anatoly Zavyalov
+        </span>
+        <a class="header-button text transition header-element" href="#projects">
+            projects
+        </a>
+        <a class="header-button text transition header-element" href="#academics">
+            academics
+        </a>
+        <a class="header-button text transition header-element" href="#contact">
+            contact
+        </a>
+    </div>
+    <div id="body-wrapper" class="transition text">
+
+        <h1>Hi.</h1>
+        <div>
+            <p> I study Computer Science, Mathematics, and Physics at the University of Toronto. I'm very passionate
+                about programming, mathematics, game development, and piano. On this site, you can view my past and ongoing
+                projects and creations.
+        
+                <br><br><br>
+        
+                Check out my GitHub <a href="https://github.com/firetto">here</a>.
+                <br>
+                <br>
+                Find me on Linkedin <a href="https://www.linkedin.com/in/anatoly-zavyalov/">here</a>.
+            </p>
+        </div>
+
+        <div class="divider"></div>
+
+        <h1 id="projects">Projects</h1>
+        <div style="text-align: center;">
+            <div class="project-wrapper transition">
+                <iframe width="400" height="225" src="https://www.youtube.com/embed/_xzCwtbBX9M" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+                <h2>SUPREM.IO</h2>
+                <p>A new online battle arena platformer with tons of weapons and enthralling, high-pace gameplay. Play from
+                    your browser with your friends at <a href="https://suprem.io/">suprem.io</a>!</p>
+            </div>
+            <div class="project-wrapper transition">
+                <iframe width="400" height="225" src="https://www.youtube.com/embed/4-GXL-fSmZ4" frameborder="0"
+                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <h2>Vessel Clash</h2>
+                <p>A space-themed endless arcade shooter with thrilling powerups, unique enemies, and epic bosses! Download
+                    <a href="https://drive.google.com/file/d/1OhOShPYICU9vpHz3o19s5Bt1uLvTZdd1/view">here</a>.
+                </p>
+            </div>
+        
+            <div class="project-wrapper transition">
+                <div class="image-slideshow-wrapper" id="project2-slideshow">
+                    <button class="image-slideshow-left-arrow image-slideshow-button transition"
+                        id="project2-image-slideshow-left-arrow"
+                        onclick="project_2_image_select(project_2_imageIndex - 1)">&#10094;</button>
+                    <button class="image-slideshow-right-arrow image-slideshow-button transition"
+                        id="project2-image-slideshow-right-arrow"
+                        onclick="project_2_image_select(project_2_imageIndex + 1)">&#10095;</button>
+                    <img src="https://raw.githubusercontent.com/firetto/ICS12Game/master/screenshots/ogygius1.png"
+                        class="slideshow-img" id="project2-img-1">
+                    <img src="https://raw.githubusercontent.com/firetto/ICS12Game/master/screenshots/ogygius2.png"
+                        class="slideshow-img" id="project2-img-2">
+                    <img src="https://raw.githubusercontent.com/firetto/ICS12Game/master/screenshots/ogygius3.png"
+                        class="slideshow-img" id="project2-img-3">
+                    <img src="https://raw.githubusercontent.com/firetto/ICS12Game/master/screenshots/ogygius4.png"
+                        class="slideshow-img" id="project2-img-4">
+                    <img src="https://raw.githubusercontent.com/firetto/ICS12Game/master/screenshots/ogygius5.png"
+                        class="slideshow-img" id="project2-img-5">
+                </div>
+                <h2>Ogygius</h2>
+                <p>A Minecraft-esque survival adventure game, with crafting, animals, building, combat, and procedurally
+                    generating biomes! View on GitHub <a href="https://github.com/firetto/ICS12Game">here</a>.</p>
+            </div>
+        
+            <div class="project-wrapper transition">
+                <img src="https://github.com/firetto/CSC111-Final-Project/blob/main/screenshots/screenshot3.png?raw=true"
+                    style="height:225px">
+                <h2>Reversi</h2>
+                <p>A PyGame program that allows to play against Reversi AIs of various difficulties and watch AIs battle it out
+                    against each other. View on GitHub <a href="https://github.com/firetto/CSC111-Final-Project">here</a>.</p>
+            </div>
+        
+            <div class="project-wrapper transition">
+                <div class="image-slideshow-wrapper" id="project3-slideshow">
+                    <button class="image-slideshow-left-arrow image-slideshow-button transition"
+                        id="project3-image-slideshow-left-arrow"
+                        onclick="project_3_image_select(project_3_imageIndex - 1)">&#10094;</button>
+                    <button class="image-slideshow-right-arrow image-slideshow-button transition"
+                        id="project3-image-slideshow-right-arrow"
+                        onclick="project_3_image_select(project_3_imageIndex + 1)">&#10095;</button>
+                    <img src="https://github.com/firetto/CSC110-Final-Project/blob/master/screenshots/1.png?raw=true"
+                        class="slideshow-img" id="project3-img-1">
+                    <img src="https://github.com/firetto/CSC110-Final-Project/blob/master/screenshots/2.png?raw=true"
+                        class="slideshow-img" id="project3-img-2">
+                    <img src="https://github.com/firetto/CSC110-Final-Project/blob/master/screenshots/3.png?raw=true"
+                        class="slideshow-img" id="project3-img-3">
+                    <img src="https://github.com/firetto/CSC110-Final-Project/blob/master/screenshots/4.png?raw=true"
+                        class="slideshow-img" id="project3-img-4">
+                    <img src="https://github.com/firetto/CSC110-Final-Project/blob/master/screenshots/5.png?raw=true"
+                        class="slideshow-img" id="project3-img-5">
+                </div>
+                <h2>Visual Wildfire Timelapse</h2>
+                <p>This program visualizes the frequency of wildfires in North America by creating a visual timelapse of
+                    wildfires over 70 years. View on GitHub <a href="https://github.com/firetto/CSC110-Final-Project">here</a>.
+                </p>
+            </div>
+        </div>
+        
+        <h3>Some of my smaller projects.</h3>
+        
+        <ul>
+            <li><a href="https://github.com/firetto/Row-Echelon-Calculator">Row Echelon Calculator</a>: converts matrices into
+                row echelon form (Made in Python)</li>
+            <li><a href="https://github.com/firetto/PythonDirectorySizeThing">Largest Files in Directory</a>: a function that
+                helps you identify the largest files in a directory (Made in Python)</li>
+        </ul>
+
+        <div class="divider"></div>
+
+        <h1 id="academics">Academics</h1>
+
+        <h3>SURP 2021</h3>
+        In the summer of 2021, I am conducting research with the <a href="https://surpatuoftastro.github.io/">Summer
+            Undergraduate Research Program</a> at the David A. Dunlap Department of Astronomy and Astrophysics (DADDAA) at the
+        University of Toronto, under the supervision of <a
+            href="https://www.astro.utoronto.ca/people/faculty/name/adam-hincks/">Adam Hincks</a>, developing a
+        web-based interface for on-site hardware management for the <a href="https://hirax.ukzn.ac.za/">Hydrogen Intensity and
+            Real-time Analysis eXperiment</a> (HIRAX).
+        
+        <br><br>
+        My <a href="https://github.com/firetto/JanusGraphTest">JanusGraphTest repository</a> contains Jupyter notebooks to test the functionality of JanusGraph, a graph database that will be used for the project.
+
+        <h3>Courses Taken</h3>
+        <table class="text courses-table">
+            <tr>
+                <th><em>MAT157</em>: Analysis I</th>
+                <th>(Final Grade: 96%)</th>
+            </tr>
+            <tr>
+                <th><em>MAT240</em>: Algebra I</th>
+                <th>(Final Grade: 95%)</th>
+            </tr>
+            <tr>
+                <th><em>MAT247</em>: Algebra II</th>
+                <th>(Final Grade: 100%)</th>
+            </tr>
+            <tr>
+                <th><em>MAT344</em>: Introduction to Combinatorics</th>
+                <th>(Final Grade: 99%)</th>
+            </tr>
+
+            <tr class="blank_row">
+                <th colspan="2" class="blank_col">&nbsp;</th>
+            </tr>
+
+            <tr>
+                <th><em>PHY151</em>: Foundations of Physics I</th>
+                <th>(Final Grade: 94%)</th>
+            </tr>
+            <tr>
+                <th><em>PHY152</em>: Foundations of Physics II</th>
+                <th>(Final Grade: 96%)</th>
+            </tr>
+
+            <tr class="blank_row">
+                <th colspan="2" class="blank_col">&nbsp;</th>
+            </tr>
+
+            <tr>
+                <th><em>CSC110</em>: Foundations of Computer Science I</th>
+                <th>(Final Grade: 96%)</th>
+            </tr>
+            <tr>
+                <th><em>CSC111</em>: Foundations of Computer Science II</th>
+                <th>(Final Grade: 96%)</th>
+            </tr>
+            <tr>
+                <th><em>CSC240</em>: Enriched Introduction to the Theory of Computation</th>
+                <th>(Final Grade: 95%)</th>
+            </tr>
+            <tr>
+                <th><em>CSC197</em>: What, Who, How: Privacy in the Age of Big Data Collection</th>
+                <th>(Final Grade: 94%)</th>
+            </tr>
+        </table>
+        
+        <h3>Other Stuff</h3>
+        <ul>
+            <li><a
+                    href="https://github.com/firetto/UofT-Notes/blob/master/Miscellaneous/Friedberg%2C%20Spence%2C%20Insel%20Solutions/Chapter%201.pdf">(Unfinished)
+                    Solutions to Chapter 1 of Linear Algebra 4th Ed. by Friedberg, Insel, Spence</a></li>
+            <li><a
+                    href="https://github.com/firetto/UofT-Notes/blob/master/Miscellaneous/Solutions%20to%20Matthew%20Koster's%20Big%20List%20of%20Problems.pdf">(Unfinished)
+                    Solutions to Matthew Koster's List of Problems</a> (found <a
+                    href="http://www.math.toronto.edu/mkoster/240/problems1.pdf">here</a>)</li>
+            <li><a href="https://github.com/firetto/UofT-Notes/blob/master/Miscellaneous/example-e-d-proof.pdf">An Example
+                    Epsilon-Delta Limit Proof</a></li>
+            <li><a href="https://github.com/firetto/UofT-Notes">A Repository of Notes for the First Few Lectures of My
+                    Courses</a></li>
+        </ul>
+
+        <div class="divider"></div>
+
+        <h1 id="contact">Here's how you can get in touch.</h1>
+        <p>Email: <span style="font-weight: 600">anatoly DOT zavyalov AT mail DOT utoronto DOT ca</span></p>
+    </div>
+
+</body>
+<script>
+
+    var project_2_imageIndex = 0;
+    function project_2_image_select(i) {
+        if (i > 4) {
+            i = 0;
+        }
+        else if (i < 0) {
+            i = 4;
+        }
+        project_2_imageIndex = i;
+        for (j = 1; j <= 5; j++) {
+            document.getElementById(`project2-img-${j}`).style.left = `calc(560px * ${j - i - 1})`;
+        }
+    }
+
+    var project_3_imageIndex = 0;
+    function project_3_image_select(i) {
+        if (i > 4) {
+            i = 0;
+        }
+        else if (i < 0) {
+            i = 4;
+        }
+        project_3_imageIndex = i;
+        for (j = 1; j <= 5; j++) {
+            document.getElementById(`project3-img-${j}`).style.left = `calc(560px * ${j - i - 1})`;
+        }
+    }
+</script>
+
+</html>
