@@ -1,0 +1,16 @@
+.CopyButton {
+    float: right;
+    text-align: right;
+    color: rgb(211, 211, 211);
+    stroke: rgb(211, 211, 211);
+}
+
+.CopyButton:hover {
+    color: rgb(255, 255, 255);
+    stroke: rgb(255, 255, 255);
+    cursor: pointer;
+}
+
+.CopyButton:active {
+    transform: scale(0.9);
+}
