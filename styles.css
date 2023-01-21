@@ -37,12 +37,12 @@
 }
 
 #body-wrapper {
-    width: calc(100% - 4em);
+    width: calc(100% - 12em);
     height: calc(100% - 3em);
     top: 3em;
     margin: 0;
-    padding-left: 2em;
-    padding-right: 2em;
+    padding-left: 6em;
+    padding-right: 6em;
     position: absolute;
     overflow-y: scroll;
 }
