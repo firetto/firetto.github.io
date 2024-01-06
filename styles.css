@@ -76,7 +76,8 @@ img {
     padding: 0.5em;
     text-align: center;
     color: rgb(230, 230, 255);
-    transform: scale(0.9);  
+    transform: scale(0.9);
+    transform-origin: 50% 0;
 }
 @media only screen and (max-width:370px) {
     .image {
