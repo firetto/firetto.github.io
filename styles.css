@@ -18,6 +18,9 @@ strong {
     text-shadow: 0px 0.25px, 0.25px 0px, 0.25px 0px;
 }
 img {
+
+}
+.image {
     border-radius: 1em;
     outline-style:solid;
     outline-color:rgba(0,0,0,0.1);
@@ -67,7 +70,16 @@ img {
     flex-direction: column;
     float:right;
 }
-
+@media only screen and (max-width:370px) {
+    .image {
+        font-size: 0.7em;
+    }
+}
+@media only screen and (max-width:435px) {
+    .image {
+        font-size: 0.8em;
+    }
+}
 @media only screen and (max-width:720px) {
     #body-wrapper {
         width: 90%;
@@ -169,7 +181,7 @@ body {
     color: rgb(230, 230, 255);
     display: inline-block;
     overflow: hidden;
-    transform: scale(0.9);
+    transform: scale(0.9);  
 }
 
 /* .project-wrapper:hover {
@@ -282,6 +294,7 @@ th {
 
 a {
     color: rgb(255, 255, 255);
+    word-break: break-all;
 }
 
 h3 {
