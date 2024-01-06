@@ -52,14 +52,64 @@ img {
 }
 
 #body-wrapper {
-    width: calc(100% - 20em);
     height: calc(100% - 3em);
     top: 3em;
     margin: 0;
-    padding-left: 10em;
-    padding-right: 10em;
     position: absolute;
     overflow-y: scroll;
+}
+#links {
+    display: inline-block;
+}
+
+#teaching-images-wrapper {
+    display: flex;
+    flex-direction: column;
+    float:right;
+}
+
+@media only screen and (max-width:720px) {
+    #body-wrapper {
+        width: 90%;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+    #intro-wrapper {
+        display:flex;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    #links {
+        display: none;
+    }
+    #teaching-images-wrapper {
+        float:none;
+    }
+    #teaching-wrapper {
+        flex-direction: column-reverse;
+        display: flex;
+    }
+}
+@media only screen and (min-width:721px) {
+    #body-wrapper {
+        width: 90%;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+    #intro-wrapper {
+        display:flex;
+        flex-direction: row;
+    }
+    #teaching-wrapper {
+        display: inline-block;  
+    }
+}
+#project-wrapper {
+    display: flex;
+    gap: 0.5em;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .main-wrapper {
@@ -112,22 +162,21 @@ body {
 }
 
 .project-wrapper {
-    width: 25em;
+    width: 22em;
     background-color: rgba(0, 0, 0, 0.1);
     padding: 0.5em;
     text-align: center;
     color: rgb(230, 230, 255);
     display: inline-block;
     overflow: hidden;
-    margin-right: 2em;
-    margin-top: 0.5em;
+    transform: scale(0.9);
 }
 
-.project-wrapper:hover {
+/* .project-wrapper:hover {
     background-color: rgba(0, 0, 0, 0.2);
     box-shadow: 0 0 7px rgba(0, 0, 0, 0.5);
     color: rgb(255, 255, 255);
-}
+} */
 
 .image-slideshow-wrapper {
     overflow: hidden;

@@ -16,7 +16,7 @@
         <span class="header-element text header-title">
             Anatoly Zavyalov
         </span>
-        <span class="header-element noselect" style="color: rgba(255,255,255,0.5); ">
+        <div id="links"><span class="header-element noselect" style="color: rgba(255,255,255,0.5); ">
             |
         </span>
         <a class="header-button text transition header-element" href="#publications">
@@ -39,13 +39,14 @@
         </span>
         <a class="header-button text transition header-element" href="#projects">
             projects
-        </a>
+        </a></div>
+        
     </div>
     <div id="body-wrapper" class="transition text">
 
         <br>
         
-        <div style="display: flex;">
+        <div id="intro-wrapper">
             <div>
                 <h1>Hi!</h1>
                 <p> 
@@ -129,36 +130,32 @@
         
         <div class="divider"></div>
 
-        <div style="display: flex; ">
-            <div>
-                <h1 id="teaching">Teaching</h1>
-                    I'm deeply passionate about teaching for all levels, ranging from teaching primary and high school students, to working as a teaching assistant for university courses with hundreds of students.
-
-                <h2>Teaching Assistantships</h2>
-                <ul>
-                    <li>
-                        TA for CSC363: Computational Complexity and Computability (Winter 2024)
-                    </li>
-                    <li>
-                        <strong>Lead TA</strong> for CSC373: Algorithm Design and Analysis (Fall 2023)
-                    </li>
-                    <li>TA for CSC240: Enriched Introduction to the Theory of Computation (Winter 2022) </li>
-                </ul>
-                <h2>Other</h2>
-                Every summer, I volunteer as a counselor at <a href="https://sigmacamp.org/">SigmaCamp</a>, a non-profit STEM summer camp aimed at curious teenagers from all over the world. There, I helped to develop and lead a course on probability with Professor Sofya Raskhodnikova from Boston University. I also lead the creation of SigmaCamp's CS "Problems of the Month", providing an opportunity to all for continuous leaning and problem-solving. I also organize Sigma's chamber concert! 🎹🎺🎻
-            </div>
-            <div>
+        <div id="teaching-wrapper">
+            <div id="teaching-images-wrapper">
                 <img src="images/anatolysigma1.png" style="align-self: center; width: 20em; margin-left: 2em; margin-top: 1em;"/>
                 <img src="images/anatolysigma2.png" style="align-self: center; width: 20em; margin-left: 2em; margin-top: 1em;"/>
             </div>
-            
-        </div>
-        
+            <div>
+                <h1 id="teaching">Teaching</h1>
+                I'm deeply passionate about teaching for all levels, ranging from teaching primary and high school students, to working as a teaching assistant for university courses with hundreds of students.
 
-        <div style="display: flex">
-            <p>
-                
-            </p>
+            <h2>Teaching Assistantships</h2>
+            <ul>
+                <li>
+                    TA for CSC363: Computational Complexity and Computability (Winter 2024)
+                </li>
+                <li>
+                    <strong>Lead TA</strong> for CSC373: Algorithm Design and Analysis (Fall 2023)
+                </li>
+                <li>TA for CSC240: Enriched Introduction to the Theory of Computation (Winter 2022) </li>
+            </ul>
+            <h2>Outreach</h2>
+
+            Every summer, I volunteer as a counselor at <a href="https://sigmacamp.org/">SigmaCamp</a>, a non-profit STEM summer camp aimed at curious teenagers from all over the world. There, I helped to develop and lead a course on probability with Professor Sofya Raskhodnikova from Boston University. I also lead the creation of SigmaCamp's CS "Problems of the Month", providing an opportunity to all for continuous leaning and problem-solving.
+            </div>
+            
+
+
             
         </div>
         
@@ -168,7 +165,7 @@
         <div class="divider"></div>
 
         <h1 id="projects">Projects</h1>
-        <div style="text-align: center;">
+        <div id="project-wrapper">
             <div class="project-wrapper transition">
                 <iframe width="400" height="225" src="https://www.youtube.com/embed/_xzCwtbBX9M" frameborder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
