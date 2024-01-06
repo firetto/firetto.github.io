@@ -15,7 +15,7 @@ li + li {
     margin-top: 1em;
 }
 strong {
-    text-shadow: 0px 0.25px, 0.25px 0px, 0.25px 0px;
+    /* text-shadow: 0px 0.25px, 0.25px 0px, 0.25px 0px; */
 }
 img {
 
@@ -70,6 +70,14 @@ img {
     flex-direction: column;
     float:right;
 }
+.project-wrapper {
+    width: 22em;
+    background-color: rgba(0, 0, 0, 0.1);
+    padding: 0.5em;
+    text-align: center;
+    color: rgb(230, 230, 255);
+    transform: scale(0.9);  
+}
 @media only screen and (max-width:370px) {
     .image {
         font-size: 0.7em;
@@ -102,6 +110,12 @@ img {
         flex-direction: column-reverse;
         display: flex;
     }
+    .table-year {
+        padding-right: 0em;
+    }
+    .project-wrapper {
+        transform: scale(0.75);
+    }
 }
 @media only screen and (min-width:721px) {
     #body-wrapper {
@@ -115,6 +129,9 @@ img {
     }
     #teaching-wrapper {
         display: inline-block;  
+    }
+    .table-year {
+        padding-right: 3em;
     }
 }
 #project-wrapper {
@@ -171,17 +188,6 @@ body {
 
 .onload-transition {
     transition: 0.5s all ease, color 1ms, width 1ms;
-}
-
-.project-wrapper {
-    width: 22em;
-    background-color: rgba(0, 0, 0, 0.1);
-    padding: 0.5em;
-    text-align: center;
-    color: rgb(230, 230, 255);
-    display: inline-block;
-    overflow: hidden;
-    transform: scale(0.9);  
 }
 
 /* .project-wrapper:hover {
