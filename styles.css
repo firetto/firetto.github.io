@@ -32,7 +32,7 @@ a {
 }
 
 .header-element {
-    transition: 0.2s all;
+    /* transition: 0.2s all; */
     margin-right: 1em;
 }
 
@@ -191,11 +191,11 @@ body {
 }
 
 .transition {
-    transition: 0.2s all;
+    /* transition: 0.2s all; */
 }
 
 .onload-transition {
-    transition: 0.5s all ease, color 1ms, width 1ms;
+    /* transition: 0.5s all ease, color 1ms, width 1ms; */
 }
 
 /* .project-wrapper:hover {
