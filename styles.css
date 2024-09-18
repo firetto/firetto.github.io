@@ -20,6 +20,10 @@ strong {
 img {
 
 }
+a {
+    /* white-space: nowrap; */
+    word-wrap: normal;
+}
 .image {
     border-radius: 1em;
     outline-style:solid;
@@ -99,7 +103,10 @@ img {
         display:flex;
         flex-direction: row;
         justify-content: center;
-        flex-wrap: wrap;
+        word-break:keep-all;
+    }
+    #intro-wrapper a {
+        white-space: nowrap;
     }
     #links {
         display: none;
@@ -301,7 +308,6 @@ th {
 
 a {
     color: rgb(255, 255, 255);
-    word-break: break-all;
 }
 
 h3 {
