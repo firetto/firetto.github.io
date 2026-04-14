@@ -1,10 +1,11 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
     <title>
         Anatoly Zavyalov
     </title>
-    <meta name="description" content="I am an undergraduate at the University of Toronto studying mathematics, computer science, and physics. I am broadly interested in theoretical computer science and algorithm design.">
+    <meta name="description" content="I am a computer science PhD student at Boston University, where I am fortunate to be supervised by Sofya Raskhodnikova. I am broadly interested in differential privacy and sublinear algorithms.">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -13,7 +14,7 @@
 </head>
 
 <body>
-    <div id="header" class="transition">
+    <!-- <div id="header" class="transition">
         <span class="header-element text header-title">
             Anatoly Zavyalov
         </span>
@@ -35,83 +36,71 @@
         <a class="header-button text transition header-element" href="#teaching">
             teaching
         </a>
-        <span class="header-element noselect" style="color: rgba(255,255,255,0.5); ">
-            |
-        </span>
-        <a class="header-button text transition header-element" href="#projects">
-            projects
-        </a></div>
-        
-    </div>
+    </div> -->
     <div id="body-wrapper" class="text">
         
         <div id="intro-wrapper">
+            <div id="intro-picture-wrapper">
+                <img id="anatoly-image" class="image" src="images/rmv-pic.png" style="align-self: center; width: 12em;"/>
+                <div id="intro-picture-links">
+                    <a href="cv.pdf"><strong>CV</strong></a>   |   <a href="https://github.com/firetto"><strong>GitHub</strong></a>  |  <a href="https://www.linkedin.com/in/anatoly-zavyalov/"><strong>LinkedIn</strong></a>
+                </div>
+                
+            </div>
             <div>
-                <h1>Hi!</h1>
+                <h1>Anatoly Zavyalov</h1>
                 <p> 
-                    I am a computer science PhD student at Boston University, where I am fortunate to be supervised by <a href="https://cs-people.bu.edu/sofya/">Sofya Raskhodnikova</a>. I am broadly interested in differential privacy and sublinear algorithms.
+                    I am a computer science PhD student at Boston University in the <a href="https://www.bu.edu/tcs/">TCS Research Group</a>, where I am fortunate to be supervised by <a href="https://cs-people.bu.edu/sofya/">Sofya Raskhodnikova</a>. I am interested in differential privacy and sublinear algorithms, especially in  graph settings.
 
                     <br><br>
 
-                    I completed my Bachelor's at the University of Toronto, where I studied mathematics, computer science, and physics. I have previously done research in automata theory and software for astronomy.
-
-                    <br><br>
-
-                    Outside of academia, I love game development, playing the piano, learning new languages, and long-distance biking.
-                    
-                    <br><br>
-            
-                    <a href="cv.pdf"><strong>CV</strong></a>   |   <a href="https://github.com/firetto"><strong>GitHub</strong></a>  |  <a href="https://www.linkedin.com/in/anatoly-zavyalov/"><strong>Linkedin</strong></a>
+                    Outside of academia, I love game development, piano, learning languages, and long-distance biking.  
                 </p>
             </div>
-            <img id="anatoly-image" class="image" src="images/Anatoly_Zavyalov.jpg" style="align-self: center; width: 12em;"/>
         </div>
 
         <div class="divider"></div>
 
-        <h1 id="publications">Publications</h1>
+        <h2 id="news">News</h2>
+
         <ul>
             <li>
-                <a href="https://doi.org/10.1007/978-3-031-40247-0_20">Transduction of Automatic Sequences and Applications</a>
+                <strong>April 2026:</strong> Our paper <a href="https://arxiv.org/abs/2602.15802"><strong>Local Node Differential Privacy</strong></a> got accepted to <a href="https://tpdp.journalprivacyconfidentiality.org/2026/">TPDP 2026</a> and as a Highlights Track Talk at <a href="https://responsiblecomputing.org/forc-2026/">FORC 2026</a>!
+            </li>
+            <li>
+                <strong>March 2026:</strong> I gave a talk at the University of Oxford on our paper <a href="https://arxiv.org/abs/2602.15802"><strong>Local Node Differential Privacy</strong></a>.
+            </li>
+            <li>
+                <strong>January 2026:</strong> I will be working as a research intern at the <a href="https://www.mpi-sp.org/"><strong>Max Planck Institute for Security and Privacy</strong></a> in Bochum, Germany, from May to July 2026. 
+            </li>
+            <li>
+                <strong>September 2024:</strong> I started my PhD at Boston University and received a <strong>Chair's Graduate Fellowship</strong>, worth $10,000 USD.
+            </li>
+        </ul>
+        <div class="divider"></div>
+
+        <h2 id="publications">Selected Publications</h2>
+        <ul>
+            <li>
+                <a href="https://arxiv.org/abs/2602.15802"><strong>Local Node Differential Privacy</strong></a>
+                <br>
+                With Sofya Raskhodnikova, Adam Smith, Connor Wagaman. <em>arXiv preprint arXiv: 2602.15802</em>, 2026.
+            </li>
+            <li>
+                <a href="https://doi.org/10.1007/978-3-031-40247-0_20"><strong>Transduction of Automatic Sequences and Applications</strong></a>
                 <br>
                 With Jeffrey Shallit. <em>Conference on Implementation and Application of Automata</em>, 2023.
             </li>
             <li>
-                <a href="https://doi.org/10.1117/12.2627960">A graph database solution for tracking the deployment and layout of a large radio interferometer</a>
+                <a href="https://doi.org/10.1117/12.2627960"><strong>A graph database solution for tracking the deployment and layout of a large radio interferometer</strong></a>
                 <br>
                 With Adam D. Hincks, and Dhananjhay Bansal. <em>SPIE Software and Cyberinfrastructure for Astronomy VII</em>, 2022.
             </li>
-            <li>
+            <!-- <li>
                 <a href="https://doi.org/10.1117/1.JATIS.8.1.011019">The Hydrogen Intensity and Real-time Analysis eXperiment: 256-Element Array Status and Overview.</a>
                 <br>
                 With Devin Crichton, et al. <em>Journal of Astronomical Telescopes, Instruments, and Systems</em>, 2022.
-            </li>
-        </ul>
-
-        <div class="divider"></div>
-
-        <h1 id="talks">Talks</h1>
-        <ul>
-            <li>
-                <a href="https://firetto.github.io/talks/ciaa2023.pdf">Transduction of Automatic Sequences and Applications</a>
-                <br>
-                <em>Conference on Implementation and Application of Automata</em>, 2023, 30 min.
-            </li>
-            <li>
-                <a href="https://firetto.github.io/talks/sigmacamp2023.pdf">Automata Theory: The Foundations of Computer Science</a>
-                <br>
-                <em>SigmaCamp</em>, 2023, 1 hr.
-            </li>
-            <li>
-                <a href="https://firetto.github.io/talks/cumc2023.pdf">Automatic Sequences</a>
-                <br> 
-                <em>Canadian Undergraduate Math Conference</em>, 2023, 30 min.
-            </li>
-            <li>
-                <a href="https://firetto.github.io/talks/pgadey.pdf">Automatic Sequences</a>
-                <br>
-                <em>University of Toronto Scarborough CMS Undergraduate Seminar</em>, 2023, 1 hr. &ThinSpace; | &ThinSpace; <a href="https://youtu.be/yss7DfYSZ2M"><strong>Recording</strong></a>
-            </li>
+            </li> -->
         </ul>
 
         
@@ -119,36 +108,40 @@
 
         <div id="teaching-wrapper">
             <div id="teaching-images-wrapper">
-                <img class="image" src="images/anatolysigma1.png" style="align-self: center; width: 20em;"/>
-                <img class="image" src="images/anatolysigma2.png" style="align-self: center; width: 20em;"/>
+                <img class="image" src="images/A96A9249_preview.jpeg" style="align-self: center; width: 20em;"/>
+                <!-- <img class="image" src="images/anatolysigma2.png" style="align-self: center; width: 20em;"/> -->
             </div>
             <div>
-                <h1 id="teaching">Teaching</h1>
+                <h2 id="teaching">Teaching</h2>
                 I am deeply passionate about teaching for all levels, ranging from teaching primary and high school students, to working as a teaching assistant for university courses with hundreds of students.
 
-            <h2>Teaching Assistantships</h2>
+            <h3>Teaching Assistantships</h3>
+
+            <strong>Boston University</strong>
             <ul>
                 <li>
-                    TA for CSC363: Computational Complexity and Computability (Winter 2024)
+                    Teaching Fellow for CS237: Probability in Computing (Fall 2025)
+                </li>
+            </ul>
+            <strong>University of Toronto</strong>
+            <ul>
+                <li>
+                    Teaching Assistant for CSC363: Computational Complexity and Computability (Winter 2024)
                 </li>
                 <li>
-                    <strong>Lead TA</strong> for CSC373: Algorithm Design and Analysis (Fall 2023)
+                    Lead Teaching Assistant for CSC373: Algorithm Design and Analysis (Fall 2023)
                 </li>
-                <li>TA for CSC240: Enriched Introduction to the Theory of Computation (Winter 2022) </li>
+                <li>Teaching Assistant for CSC240: Enriched Introduction to the Theory of Computation (Winter 2022) </li>
             </ul>
-            <h2>Outreach</h2>
+            <h3>Outreach</h3>
 
-            Every summer, I volunteer as a counselor at <a href="https://sigmacamp.org/">SigmaCamp</a>, a non-profit STEM summer camp aimed at curious teenagers from all over the world. I am also the chair of Sigma's Problem of the Month competition, which provides an opportunity to all for continuous learning and problem-solving.
-            </div>
-            
-
-
-            
+            Every summer, I volunteer as a counselor at <a href="https://sigmacamp.org/">SigmaCamp</a>, a non-profit STEM summer camp aimed at curious teenagers from all over the world. I am also the chair of Sigma's <a href="https://sigmacamp.org/pom">Problem of the Month</a> competition, which provides an opportunity to all for continuous learning and problem-solving.
+            </div>  
         </div>
         
 
 
-
+<!--         
         <div class="divider"></div>
 
         <h1 id="projects">Projects</h1>
@@ -201,16 +194,16 @@
         <h1 id="other">Other</h1>
         <ul>
             <li><a href="/translations/songs/index.html">Translations of song lyrics</a></li>
-        </ul>
+        </ul> -->
 
         <div class="divider"></div>
 
-        <h1 id="contact">Contact</h1>
+        <h2 id="contact">Contact</h2>
         <p>Email: <span style="font-weight: 600">zavyalov AT bu DOT edu</span></p>
     </div>
 
 </body>
-<script>
+<!-- <script>
 
     var project_2_imageIndex = 0;
     function project_2_image_select(i) {
@@ -239,6 +232,6 @@
             document.getElementById(`project3-img-${j}`).style.left = `calc(560px * ${j - i - 1})`;
         }
     }
-</script>
+</script> -->
 
 </html>

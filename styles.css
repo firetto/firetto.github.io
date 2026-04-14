@@ -8,38 +8,34 @@
     z-index: 1;
     box-shadow: 0px 0 5px rgba(0, 0, 0, 0.2);
 }
+
 table {
     font-size: 1em;
 }
+
 li + li {
     margin-top: 1em;
 }
-strong {
-    /* text-shadow: 0px 0.25px, 0.25px 0px, 0.25px 0px; */
-}
-img {
 
-}
 a {
-    /* white-space: nowrap; */
-    word-wrap: normal;
+    color: rgb(255, 255, 255);
 }
+
 .image {
     border-radius: 1em;
-    outline-style:solid;
-    outline-color:rgba(0,0,0,0.1);
+    outline-style: solid;
+    outline-color: rgba(0, 0, 0, 0.1);
     outline-width: 0.25em;
 }
 
 .header-element {
-    /* transition: 0.2s all; */
     margin-right: 1em;
 }
 
 .header-title {
     font-family: 'Maven Pro', sans-serif;
     color: rgb(225, 225, 225);
-    font-weight:bold;
+    font-weight: bold;
     margin-left: 1.5em;
 }
 
@@ -59,12 +55,15 @@ a {
 }
 
 #body-wrapper {
+    /* background-color: rgb(61, 61, 93); */
     height: calc(100% - 3em);
-    top: 3em;
+    /* top: 3em; */
+    padding-top: 3em;
     margin: 0;
     position: absolute;
     overflow-y: scroll;
 }
+
 #links {
     display: inline-block;
 }
@@ -72,43 +71,57 @@ a {
 #teaching-images-wrapper {
     display: flex;
     flex-direction: column;
-    float:right;
+    float: right;
+    margin-left: 1em;
 }
+
 .project-wrapper {
     width: 22em;
     background-color: rgba(0, 0, 0, 0.1);
     padding: 0.5em;
     text-align: center;
     color: rgb(230, 230, 255);
-    
 }
+
 #project-wrapper-div {
     display: flex;
     gap: 0.5em;
     flex-wrap: wrap;
     justify-content: center;
 }
-@media only screen and (max-width:370px) {
+
+@media only screen and (max-width: 370px) {
     .image {
         font-size: 0.7em;
     }
 }
-@media only screen and (max-width:435px) {
+
+@media only screen and (max-width: 435px) {
     .image {
         font-size: 0.8em;
     }
 }
-@media only screen and (max-width:720px) {
+
+#intro-picture-wrapper {
+    width: 12em;
+    text-align:center;
+}
+#intro-picture-links {
+    margin-top: 0.5em;
+}
+
+@media only screen and (max-width: 720px) {
     #body-wrapper {
-        width: 90%;
-        padding-left: 5%;
-        padding-right: 5%;
+        width: 60%;
+        padding-left: 20%;
+        padding-right: 20%;
     }
     #intro-wrapper {
-        display:flex;
+        display: flex;
+        gap: 1em;
         flex-direction: column;
         justify-content: center;
-        word-break:keep-all;
+        word-break: keep-all;
     }
     #intro-wrapper a {
         white-space: nowrap;
@@ -117,7 +130,7 @@ a {
         display: none;
     }
     #teaching-images-wrapper {
-        float:none;
+        float: none;
     }
     #teaching-wrapper {
         flex-direction: column-reverse;
@@ -126,36 +139,37 @@ a {
     .table-year {
         padding-right: 0em;
     }
-    .project-wrapper {
-        
-    }
     #teaching-images-wrapper > .image {
         margin-left: none !important;
         margin-top: 1em !important;
     }
     #anatoly-image {
-        display:flex;
+        display: block;
+        margin-left: auto;
     }
 }
-@media only screen and (min-width:721px) {
+
+@media only screen and (min-width: 721px) {
     #body-wrapper {
-        width: 90%;
-        padding-left: 5%;
-        padding-right: 5%;
+        width: 60%;
+        padding-left: 20%;
+        padding-right: 20%;
     }
     #intro-wrapper {
-        display:flex;
+        display: flex;
         flex-direction: row;
+        gap: 1em;
     }
     #teaching-wrapper {
-        display: inline-block;  
+        display: inline-block;
     }
     .table-year {
         padding-right: 3em;
     }
-    .image {
-        margin-left: 2em; margin-top: 1em;
-    }
+    /* .image {
+        margin-left: 2em;
+        margin-top: 1em;
+    } */
 }
 
 .main-wrapper {
@@ -184,12 +198,7 @@ a {
 .text {
     font-family: 'Maven Pro', sans-serif;
     color: rgb(225, 225, 225);
-    font-size: 1.2em;
-}
-.noselect {
-    -webkit-user-select: none; /* Safari */
-  -ms-user-select: none; /* IE 10 and IE 11 */
-  user-select: none; /* Standard syntax */
+    font-size: 1em;
 }
 
 body {
@@ -197,14 +206,6 @@ body {
     color: rgb(225, 225, 225);
     font-family: 'Maven Pro', sans-serif;
     margin: 0;
-}
-
-.transition {
-    /* transition: 0.2s all; */
-}
-
-.onload-transition {
-    /* transition: 0.5s all ease, color 1ms, width 1ms; */
 }
 
 /* .project-wrapper:hover {
@@ -259,26 +260,11 @@ body {
     transition: 0.5s all;
 }
 
-#project2-img-1, #project3-img-1 {
-    left: 0;
-}
-
-#project2-img-2, #project3-img-2 {
-    left: calc(560px * 1);
-}
-
-#project2-img-3, #project3-img-3 {
-    left: calc(560px * 2);
-}
-
-#project2-img-4, #project3-img-4 {
-    left: calc(560px * 3);
-}
-
-#project2-img-5, #project3-img-5 {
-    left: calc(560px * 4);
-}
-
+#project2-img-1, #project3-img-1 { left: 0; }
+#project2-img-2, #project3-img-2 { left: calc(560px * 1); }
+#project2-img-3, #project3-img-3 { left: calc(560px * 2); }
+#project2-img-4, #project3-img-4 { left: calc(560px * 3); }
+#project2-img-5, #project3-img-5 { left: calc(560px * 4); }
 
 #header-toggle-wrapper {
     position: absolute;
@@ -291,18 +277,18 @@ body {
     width: 100%;
     height: 2px;
     background-color: rgb(72, 72, 100);
-    margin-top: 2em;
-    margin-bottom: 2em;
+    margin-top: 1em;
+    margin-bottom: 1em;
 }
 
 .courses-table {
     font-size: 100%;
-    font-weight:lighter;
+    font-weight: lighter;
 }
 
 th {
     text-align: left;
-    font-weight:normal;
+    font-weight: normal;
     padding-left: 2em;
 }
 
@@ -315,47 +301,33 @@ th {
     height: 5px !important;
 }
 
-a {
-    color: rgb(255, 255, 255);
-}
-
 h3 {
     margin-top: 1.25em;
 }
-/* width */
+
 ::-webkit-scrollbar {
     width: 10px;
 }
 
-/* Track */
 ::-webkit-scrollbar-track {
     background: none;
 }
 
-/* Handle */
 ::-webkit-scrollbar-thumb {
     background: #888;
 }
 
-/* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
     background: #555;
-}
-
-.song-wrapper {
 }
 
 .song-lyrics-wrapper {
     display: inline-block;
     float: left;
     padding: 1em;
-    margin-top: 1em;
-    margin-left: 0.5em;
-    margin-right: 0.5em;
-    margin-bottom: 1em;
-    background-color: rgba(0,0,0,0.2);
+    margin: 1em 0.5em;
+    background-color: rgba(0, 0, 0, 0.2);
     border-radius: 0.5em;
-    
 }
 
 .song-lyrics-wrapper > p {
