@@ -143,9 +143,15 @@ a {
         margin-left: none !important;
         margin-top: 1em !important;
     }
-    #anatoly-image {
+    /* #anatoly-image {
         display: block;
         margin-left: auto;
+    } */
+    #intro-picture-wrapper {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
     }
 }
 
